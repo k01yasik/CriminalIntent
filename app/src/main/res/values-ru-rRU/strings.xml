@@ -8,4 +8,5 @@
     <string name="crime_title">Заголовок Инцидента</string>
     <string name="crime_date">Дата Инцидента</string>
     <string name="crime_image">Наручники</string>
+    <string name="required_police">Нужна полиция?</string>
 </resources>

@@ -18,6 +18,7 @@
         android:textColor="#EF4747"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/crime_date"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -29,8 +30,9 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
         android:textColor="#3A3A3A"
         app:layout_constraintBottom_toBottomOf="@id/divider"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/crime_title"/>
+        app:layout_constraintTop_toBottomOf="@id/crime_title" />
 
     <ImageView
         android:id="@+id/crime_solved"
@@ -52,5 +54,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/crime_date" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.80" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
